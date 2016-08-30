@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="js/angular.min.js"></script>
+  <script src="js/wintool.js"></script>
+</head>
+<body ng-app="winTool" ng-controller="myCtrl">
+
+
+  <!-- Afbeelding (dynamisch) -->
+  <img ng-src="{{img_src}}" width="800" height="600" usemap="#map">
+
+  <!-- Coordinaten (dynamisch) -->
+  <map name="map">
+    <div ng-repeat="(coords, new_screen) in img_coords">
+      <area shape="rect" coords="{{coords}}" ng-click="loadNewScreen(new_screen)">
+    </div>
+  </map>
+
+
+</body>
+</html>
