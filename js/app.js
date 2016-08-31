@@ -1,4 +1,4 @@
-var app = angular.module('winTool', ['angular-loading-bar']);
+var app = angular.module('winTool', []);
 app.controller('myCtrl', ['$scope', function($scope) {
 
   // Data array.
