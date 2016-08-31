@@ -1,7 +1,6 @@
 Windows Click Tool
 ======
 https://ssgtcookie.github.io/windows-click-tool/
-![Windows7Desktop](https://ssgtcookie.github.io/windows-click-tool/img/window7_screen1.png)
 
 ## About
 The aim of this project is to create a clickable simulation envoirement in the webbrowser.
