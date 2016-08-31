@@ -20,7 +20,7 @@ If you want to create a link that changes the current simulation screen you can 
 ```
 <a ng-click="loadNewScreen('Windows10', 'screen1')">Click here</a>
 ```
-The above example will search for a simulation called "Windows10" in the data array. If found, "screen1" will be loaded in the <img src> tag on the HTML page.
+The above example will search for a simulation called "Windows10" in the data array. If found, "screen1" will be loaded in the img src tag on the HTML page.
 
 ## License
 Please note that I've created this project to experiment with AngularJS. This javascript is working perfectly fine but the content is not nearly done. Feel free to improve this project or use it as you need, the project is 100% license free.
