@@ -2,21 +2,21 @@
 <html>
 <head>
   <script src="js/angular.min.js"></script>
-  <script src="js/wintool.js"></script>
+  <script src="js/app.js"></script>
 </head>
-<body ng-app="winTool" ng-controller="myCtrl">
+<body ng-app="winTool" ng-controller="myCtrl" id="outer">
 
-
-  <!-- Afbeelding (dynamisch) -->
+  <!-- Image (dynamic) -->
   <img ng-src="{{img_src}}" width="800" height="600" usemap="#map">
 
-  <!-- Coordinaten (dynamisch) -->
+  <!-- Coordinates (dynamic) -->
   <map name="map">
-    <div ng-repeat="(coords, new_screen) in img_coords">
-      <area shape="rect" coords="{{coords}}" ng-click="loadNewScreen(new_screen)">
-    </div>
+    <area ng-repeat="(coords, nextScreen) in img_coords" shape="rect" coords="{{coords}}" ng-click="loadNewScreen(current_simulation, nextScreen)">
   </map>
 
-
+  <!-- Debug -->
+  <h1> Debug info: </h1>
+  <p> You are looking at <b>{{current_simulation}}</b> on screen <b>{{current_screen}}</b>.</p>
+    <button ng-repeat="(key, value) in simulationData" ng-click="loadNewScreen(key, 'screen1')">{{key}}</button>
 </body>
 </html>
