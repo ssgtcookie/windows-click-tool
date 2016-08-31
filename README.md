@@ -4,13 +4,13 @@ https://ssgtcookie.github.io/windows-click-tool/
 
 ## About
 The aim of this project is to create a clickable simulation envoirement in the webbrowser.
-* 100 % client side, created with AngularJS, Javascript and HTML.
-* Everything is on one page.
-* No page reloads.
+* 100 % client side. Build with AngularJS and HTML.
+* Everything is on one page, no page reloads.
 * No cookies are used.
 * Code is simple to read, not mutch code to cover.
-* Multi envoirement ready Create multiple simulations (Windows 10, Windows 8.1, Windows 7 and so on) on one single page.
+* Multi envoirement ready. Create multiple simulations (Windows 10, Windows 8.1, Windows 7 and so on).
 * No CSS is used to keep everything simple.
+* No webserver is required, you can run this project fine from your local harddrive.
 
 ## How to use
 The app.js file is holding one array that can be modified. In this array you can configure the simulation completely to your needs.
